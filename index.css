@@ -1,0 +1,754 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+                    
+                    /* **navbar**** */
+  nav{
+      background-color: rgba(29, 30, 30, 0.926);  
+      width:100%; 
+      height: 80px; 
+       display: flex;
+      position: fixed;
+       z-index: 999;
+      justify-content: space-between; 
+       align-items: center;
+       padding: 10px 10px; 
+       }                
+
+
+               /**** logo**** */
+.logo{
+       width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 2px solid rgb(236, 8, 240);
+        background-color: rgb(220, 242, 255); 
+      }
+                      /**** submanu**** */
+ .submanu{
+          display: flex;
+           gap: 60px;  
+           }
+
+ .submanubtn{
+                   width: 120px;  
+                  padding: 8px 6px; 
+                   font-weight: bold;
+                   font-size: 15px;
+                   border: none;          
+                   background: none;
+                    color: white;
+                    cursor: pointer;
+                    
+                  }
+
+   .submanubtn:hover{
+                    color: rgb(8, 8, 8);   
+                   cursor: pointer;
+                    /* border: inset; */
+                     border-radius: 8px; 
+                     border: none; 
+                      background-color: rgb(35, 226, 163);  
+                    box-shadow: 5px 5px 2px rgb(69, 67, 67); 
+                     font-weight: bold; 
+                   }
+
+                  /**** secarchbox*** */
+
+            .search{
+                    position: relative;
+                    
+                     } 
+          .inputbox{
+                    padding: 10px 10px; 
+                    border:1px solid rgb(239, 3, 3); 
+                     border:none;
+                     width: 130px;
+                     border-radius: 10px;
+                   } 
+          
+           .search i{
+                     position: absolute;
+                     right:15px;
+                      top: 9px;
+                      font-size: 15px;
+                       cursor: pointer;
+                     }   
+
+                         /****checkbox***  */
+
+        nav .checkbox{
+                       display: none;  
+                       }
+             nav .manu{
+                       display: none; 
+                       color: white;
+                      } 
+
+  input:checked ~.submanu{
+                        background-color: rgba(23, 23, 23, 0.877);
+                        left:0px;
+                        transition: 2s;  
+                         z-index: 999;
+                       }               
+
+                       /*****contentbox***  */
+      .main{
+           background-image: url(./img/banner.jpg); 
+           }                 
+      .box{
+            width: 100%;
+            gap: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+           animation-name: box; 
+            animation-duration: 2s; 
+            animation-delay: 1s;  
+            transition: all 2s;
+             animation-iteration-count:2;
+            position: relative;
+             
+             padding-top: 100px; 
+             padding-left: 10px;
+            } 
+                                                 /***animation box *** */
+      @keyframes box{
+                  from{
+                        right:-900px;  
+                      }
+                   to{
+                       right: 0px;
+                         } 
+                      }        
+      .box2 img{
+                width: 450px;
+                height: 400px; 
+               }      
+        
+                       
+ .box1 .line1{
+        font-size: 50px;
+        color: wheat;
+       } 
+.box1 h1{
+       font-weight: bold;
+       font-size: 60px; 
+       color: blanchedalmond;  
+       }   
+.box1 .line3{
+        line-height: 25px;
+        font-size: 20px;
+         width: 550px; 
+        padding-top: 10px;  
+        color: white;
+       }  
+    .buy{
+         display: flex; 
+         gap: 10px;
+     }    
+ .buy .buybutton{
+           padding: 20px;
+           width: 250px;
+          font-size: 40px;
+          font-weight: bold;
+          margin-top: 20px;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         border-radius: 8px;
+         border: 2px solid gold;
+        }   
+.buybutton:hover{
+           background-color: orange;
+           cursor: pointer;   
+         }
+
+    
+
+                                      /**** itemes*** */
+       .itemes{
+               
+               display: flex;
+               justify-content: space-evenly;
+               align-items: center;
+               flex-wrap: wrap;
+                padding: 20px;
+               
+             } 
+  .itemesbox1 {
+           position: relative;
+           background-color: rgb(140, 198, 198);
+            border: 2px solid black; 
+            width: 310px;
+            box-shadow: 5px 5px 2px black;
+            border-radius: 15px;
+            }      
+
+   .itemes_img{
+               width: 300px;
+               height: 280px;
+               transition: all 2s;
+              }  
+ .itemes_img:hover { 
+                  transform: scale(1.2);
+                    cursor: pointer;
+                    transition: all 2s;
+                   }  
+      .itemes_shop{
+                   background-color: rgba(22, 21, 21, 0.745);
+                   width: 200px;
+                 
+                   height: 110px;
+                    position: absolute; 
+                    top: 160px;  
+                    padding: 10px;
+                  } 
+  .itemes_shop h1{
+                  color: white;
+                  width: 100px;
+                 }                  
+  .itemes_shop button{
+                      padding: 8px;
+                      border:none;
+                      border-radius: 10px;
+                      font-weight: bold;
+                      color: white;
+                      cursor: pointer;
+                      background-color: rgb(255, 42, 0);
+                    
+                    }   
+
+
+                                     /* ***cards**** */
+       .section{
+                 display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
+                align-items: center;
+               text-align: center;
+               
+               }           
+      .card{
+            width: 300px;
+            border: 2px solid green;
+            border-radius: 8px;
+            padding: 10px;
+             font-weight: bold; 
+             font-size: 20px;
+             cursor: pointer;
+            }  
+.card .content{
+               line-height: 30px;
+               padding: 20px; 
+             }  
+ .card .order{
+              padding: 10px;
+              width: 100px;
+              font-weight: bold;
+              font-size: 25px;
+              border-radius: 10px;
+              background-color: rgb(0, 209, 84);
+              cursor: pointer;
+              border: none;
+             }                          
+ .card .phone{
+              width: 100px;
+              height: 100px;     
+           }  
+   .order:hover{
+                 background-color: rgb(183, 250, 0);
+                 box-shadow: 5px 5px 1px rgb(68, 66, 66);
+                  }  
+                                                       /****addimg****  */
+        .ad{
+           display: flex;   
+            animation-name: ad; 
+             animation-duration: 4s;
+             animation-delay: 2s;
+             position: relative;  
+            transition:all 2s;
+            animation-iteration-count:6; 
+             width: 100%;   
+             padding-top: 10px; 
+             overflow: hidden;                                          
+             }   
+          
+           @keyframes ad{
+                        from{
+                             left: -1000px;
+                            }
+                         to{
+                              left: 0px;
+                                                                
+                              }   
+                     }                                               
+
+                                     /* ******discount is laptap and computer**** */
+         .Collectionadd{
+                        background-color:rgb(235, 235, 241);
+                        width: 100%;
+                        display: flex;
+                        overflow: hidden;
+                       
+                       } 
+           .Collectionbox1{
+                         animation-name:abc;
+                           animation-duration: 4s;
+                          animation-iteration-count:6;
+                          animation-delay: 2s;
+                          position: relative;
+                          transition: all 2s;
+                         
+                         }  
+           .Collectionbox3{
+                         animation-name:img2;
+                        animation-duration: 4s;
+                        animation-iteration-count:6;
+                        transition: all 2s;
+                        position: relative;
+                        animation-delay: 2s;
+                         }              
+           
+          .Collectionbox2{
+                          text-align: center; 
+                          padding: 40px;
+                         }             
+        .Collectionbox2 h1{
+                           font-size: 40px;
+                           color: black;
+                           font-weight: bold;
+                           padding: 10px;
+                        
+                            }    
+         .Collectionbox2 h3 {
+                             font-size: 20px;
+                             color: black;
+                             font-weight: bold;
+                             padding: 20px;
+
+                          }   
+          .Collectionbox2 button{
+                                padding: 8px;
+                                width: 130px;
+                                background-color: rgb(226, 43, 43);
+                                color: white;
+                                border-radius: 15px;
+                                border: none;
+
+
+                               }                                        
+        .Collectionbox1 img{
+                            width: 400px;
+                            height: 350px;
+                           
+                          } 
+        .Collectionbox3 img{
+                           width: 400px;
+                           height: 350px;
+                           }  
+                 .imglogo img{
+                          width: 100px;
+                          height: 100px;
+                          border-radius: 50%;
+                          border: 2px double gold;
+                         }    
+       @keyframes abc{
+                   from{
+                        left: -1000px;
+                     }
+               to{
+                   left: 0px;
+                   transition: 2;
+               }    
+                  }      
+  @keyframes img2{
+             from{
+                right: -1000px;
+                }
+           to{
+              right: 0px;
+     
+             }    
+}
+
+
+
+                                                     /* *****products***** */
+               .products{
+                        display: grid;
+                       grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+                     gap: 30px;
+                      width: 100%;
+                                                   
+                       }                 
+   .product{
+                  width: 300px;
+                  text-align: center;
+                 margin: auto;
+               }    
+   .product .name{
+                 text-align: center;
+             background-color: firebrick;
+                 width: 150px;
+                  padding: 10px;
+               font-size: 20px;
+             font-weight: bold;
+            border: none;
+           color: white;
+            cursor: pointer;
+             border-radius: 10px;
+             }   
+  .headphones{
+               width: 150px;
+              height: 150px;
+              text-align: center;
+            }          
+    .product:hover .name{
+                         background-color: burlywood; 
+                         transition: all 2s;
+                         color: rgb(0, 0, 0);
+                        }  
+                                                                                       
+                   
+                   
+                   
+                        /* ***discount**** */
+          .offer{
+                 background-image:url(./img/contact_g.jpg) ;
+                 overflow: hidden;
+                }              
+         .discount{
+                   padding: 20px;
+                    display: flex;
+                     justify-content: center;
+                       align-items: center;
+                     margin-top: 30px;
+                    animation-name: dis;  
+                      animation-duration: 4s;
+                     transition: all 2s;
+                    position: relative;
+                     animation-iteration-count:3;
+                   animation-delay: 1s;
+                   width: 100%;
+                   }  
+      @keyframes dis{
+                    from{
+                        right:-1000px;  
+                       }
+                    to{
+                       right: 0px;
+                      } 
+                         }                      
+           .shob{
+                 padding: 20px;
+                width: 120px;
+                  background-color: chocolate;
+                 border: none;
+                   color: white;
+                     font-weight: bold; 
+                     margin-top: 20px;
+                     border-radius: 10px;
+                     font-size: 15px;
+                    }                               
+             .shob:hover {
+                                                    
+                   background-color: rgb(244, 232, 5);
+                   color: black;
+                  cursor: pointer;
+                                                     
+                } 
+     .disbox .p{
+            font-size: 50px;
+         color: wheat;  
+           } 
+  .disbox h1{
+         font-weight: bold;
+          font-size: 60px; 
+          color: blanchedalmond;  
+         }                     
+                                                      /* **********lastbox****** */
+     .lastbox{
+               width: 100%;
+             display: flex;
+            background-color: rgb(42, 40, 40);
+            height: 50vh;
+              color: white;
+              padding: 20px;
+               font-size: 25px;
+              }   
+       .last-box1{
+               width: 300px;
+               text-align: center;
+                 padding: 20px;                                              
+                                                        
+             }               
+        .last-box2{
+                 width: 300px;
+                padding: 20px;
+                 }                                    
+                                                       
+       .last-box3{
+                 width: 300px;
+                  padding: 20px;
+                 }                                       
+                                                      
+        .last-box4{
+                   width: 300px;
+                  padding: 20px;
+                 }                                   
+                                                     
+      .lastbox p{
+                padding-top:20px ;
+                line-height: 20px;
+                 font-size: 20px;
+                 color: rgb(197, 190, 190);
+                   } 
+                                                                    
+    .lastbox .i2{
+               font-size: 20px;
+                color: rgb(20, 19, 19);
+             }  
+        .lastbox a{
+              text-decoration: none;
+               } 
+.p-company:hover {
+                      color: rgb(255, 5, 5);
+              }                                            
+                                             
+                                                                     
+ .icons button{
+                border-radius: 50%;
+                     width: 50px;
+                height: 50px;
+             margin: 5px;
+                 border: none;
+                }                                         
+    .lastbox input{
+                 width: 100%;
+                     padding: 15px;
+                border-radius: 10px;
+                  border: 2px solid rgb(11, 243, 11);
+                  margin-top: 10px;                                      
+                                                       
+                    }                 
+::placeholder{
+                 font-weight: bold;
+              font-size: 20px;
+              }
+                                                         
+  .last-box4 .sub{
+               padding: 15px;
+             background-color: black;
+                color: white;
+                margin-top: 20px;
+                border-radius: 10px;
+                border: none;
+                   width: 150px;
+                 font-weight: bold;
+                   cursor: pointer;
+               }                                            
+        .sub:hover{
+                  background-color: hotpink;
+                color: black;
+              font-weight: bold;
+              font-size: 15px;
+        }                                                                                                            
+
+
+
+
+                      /* ***response mobile */
+
+   @media screen and (max-width:700px) {                      
+
+    .logo{
+          margin-top: 10px;
+         }    
+.submanu{
+        position: fixed;
+    
+        display: grid;
+        justify-content: center;
+        top: 120px;
+        left: 100%;
+        width: 100%;
+         padding: 20px;
+       }
+  nav .manu{
+           display: inline;
+          font-size: 30px;
+           } 
+
+    .search{
+            left: 0px;
+           } 
+
+    .inputbox{
+              width: 100%;
+             }  
+       .box{
+              flex-wrap: wrap;
+              gap: 30px;
+             }  
+    .box1 .line1{
+              font-size: 40px; 
+              padding-top: 20px;
+             }   
+    .box1 .line3{
+              font-size: 20px; 
+              width: 250px;     
+            }   
+    .box1 h1{
+             font-size: 40px; 
+             }                            
+      .buy{
+          flex-wrap: wrap;
+          } 
+    .box2 img{
+             width: 300px;
+             height: 230px;
+              }   
+       .itemes{
+               flex-wrap: wrap;   
+               } 
+              
+       .section{
+               flex-wrap: wrap;
+              }  
+       .ad img{
+               width: 500px;
+               height: 100px;
+              } 
+    .Collectionadd{
+                    flex-wrap: wrap;  
+                   }  
+ .Collectionbox1 img{
+                    width: 300px;
+                    height: 230px;
+                  }    
+.Collectionbox3 img{
+                    width: 300px;
+                    height: 230px;
+                  }                     
+       .discount{
+                flex-wrap: wrap;
+                height: 120vh;
+                width: 100%;
+               }    
+      .disimg img{
+              width: 300px;
+              height: 230px;
+            } 
+     .lastbox{
+              flex-wrap: wrap;
+              height: 200vh;
+             }                                                               
+   }
+
+   @media screen and (min-width:700px) and (max-width:900px) {
+      
+    .logo{
+             margin-top: 10px;
+          }    
+   .submanu{
+           position: fixed;
+           
+           display: grid;
+           justify-content: center;
+           top: 120px;
+           left: 100%;
+           width: 100%;
+           padding: 20px;
+          }
+     nav .manu{
+             display: inline;
+             font-size: 30px;
+       
+             }
+  
+    .search{
+              left: 0px;
+            } 
+   .inputbox{
+             width: 100%;
+            }  
+         
+    .box1 .line1{
+              font-size: 40px; 
+              padding-top: 20px;
+             }   
+    .box1 .line3{
+              font-size: 20px; 
+              width: 250px;     
+            }   
+    .box1 h1{
+             font-size: 40px; 
+             }  
+     .box2 img{
+              width: 450px;
+              height: 400px;
+     }                                  
+      .buy{
+          flex-wrap: wrap;
+          gap: 10px;
+          padding-bottom: 10px;
+          } 
+     .buy button{
+                  padding: 10px;
+                 width: 200px;
+                 font-size: 20px;
+               } 
+         .itemes{
+                flex-wrap: wrap;
+                gap: 30px;   
+                } 
+                  
+      .section{
+               flex-wrap: wrap; 
+               }    
+      .ad img{
+            width: 900px;
+            height: 280px; 
+            }   
+ .Collectionadd{
+              flex-wrap: wrap;  
+             }  
+.Collectionbox1 img{
+                  width: 450px;
+                  height: 400px;
+                    }    
+.Collectionbox3 img{
+                  width: 450px;
+                  height: 400px;
+                 }  
+ .Collectionbox2{
+                
+                 width: 90%;
+                 
+ }                              
+
+ .disimg img{
+           width: 450px;
+           height: 400px;
+          }   
+  .lastbox{
+            flex-wrap: wrap;
+            height: 100vh; 
+           }                                    
+   }           
+
+   @media screen and (max-width:1200px){
+                
+             .itemes{
+                     gap: 10px;
+                      }
+              .SHOP4{
+                     position: absolute;
+                     top: 450px;
+              }        
+    
+   }

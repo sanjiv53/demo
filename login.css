@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(./img/banner.jpg); 
+    width: 100%;
+    /* height: 100vh; */
+   }
+.head{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid rgb(3, 3, 2);
+    background-color: rgb(220, 242, 255); 
+    } 
+
+                 /* *****navbar****** */
+                     
+nav{
+   background-color: rgb(28, 123, 218);  
+    width: 100%;
+   height: 80px;
+   z-index: 999;
+  display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   padding: 20px 30px;
+   position: fixed;
+  }
+
+                             /* *****submanu********* */
+.submanu{
+      display: flex;
+     gap: 40px;  
+     /* background-color: rgb(8, 0, 255); */
+    }
+.btn{
+   width: 120px; 
+    padding: 8px 6px; 
+   font-weight: bold;
+   font-size: 15px;
+   border: none;          
+   background: none;
+    color: white;
+     /* background-color: red;     */
+  }  
+nav .input1{
+      display: none;  
+      }
+nav .i3{
+         display: none; 
+         color: white;
+        }
+          
+                                /**********search box*******  */
+.search{
+       position: relative;
+       
+        } 
+.inputbox{
+       padding: 10px 10px; 
+       border:1px solid rgb(239, 3, 3); 
+        border:none;
+        width: 130px;
+        border-radius: 10px;
+      } 
+
+.search .i1{
+     position: absolute;
+     right:15px;
+     top: 9px;
+     font-size: 15px;
+     cursor: pointer;
+     
+     } 
+
+                                         /* *****hover************ */
+.btn:hover{
+          color: rgb(8, 8, 8);  
+         cursor: pointer;
+          border: inset;
+          border-radius: 8px;
+          border: none;
+          background-color: rgb(94, 194, 161); 
+          box-shadow: 5px 5px 2px rgb(69, 67, 67);
+          font-weight: bold;
+          
+         } 
+
+         
+.search:hover .inputbox{
+                    border: 1px solid red;
+                    }  
+input:checked ~.submanu{
+                          background-color: rgba(23, 23, 23, 0.877);
+                          left:0px;
+                            transition: 1s;  
+                           z-index: 999;
+                         }  
+      
+                         /*****login page  */
+  .main{
+        background-color: rgba(231, 227, 231, 0.729);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         /* margin-top: 10px;  */
+         height: 100vh;
+     }                       
+
+                  /* --------button----- */
+.btn1{
+    display: block;
+    margin: auto;
+    padding: 8px;
+   
+    background: none;
+    color: rgb(13, 13, 13);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Abril Fatface', serif;
+    font-family: 'DM Serif Display', serif;
+    border: none;
+    width: 40%;
+}
+     
+                    /* -------form-------- */
+
+.form{
+    /* background-color: aqua; */
+    width: 400px;
+     padding: 20px; 
+     margin-top: 80px;
+    border-radius: 15px;
+    object-fit: cover;
+     /* border: 8px double rgb(32, 31, 31);  */
+    box-shadow: 10px 10px 10px 4px rgb(84, 81, 81);
+
+}
+label{
+   display: block;
+   padding-top: 10px;
+   padding: 5px;
+   font-weight: bold;
+   color: rgb(18, 19, 18);
+}
+
+.box{
+   position: relative;
+    
+}
+input{
+    width: 100%;
+     padding: 15px; 
+    border-radius: 8px;
+     
+     
+ }
+                  /*------ican-----  */
+.i4{
+  position: absolute;
+   top:20;
+  right:0;
+   background-color: white;   
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+ }
+
+                   /* --------button----- */
+ .btn3{
+   display: block;
+   margin: auto;
+   padding: 8px;
+   margin-top: 15px;
+   background-color :rgb(53, 52, 148);
+   color: rgb(248, 244, 244);
+   font-size: 25px;
+   border-radius: 15px;
+   width: 40%;
+   font-family: 'DM Serif Display', serif;
+   border: none;
+   cursor: pointer;
+
+ }  
+ 
+ .btn3:hover{
+             background-color: rgb(14, 242, 25);
+             color: black;
+               }
+ ::placeholder{
+                font-weight: bold;
+                font-size: 15px;
+                } 
+                                               /* **********lastbox****** */
+  .lastbox{
+    display: flex;
+    background-color: rgb(42, 40, 40);
+    height: 50vh;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+  }   
+.last-box1{
+     /* background-color: aqua; */
+     width: 300px;
+     text-align: center;
+     padding: 20px;
+    }               
+.last-box2{
+    /* background-color: rgb(38, 0, 255); */
+    width: 300px;
+    padding: 20px;
+   }    
+.last-box3{
+   /* background-color: rgb(255, 0, 195); */
+   width: 300px;
+   padding: 20px;
+   }      
+.last-box4{
+   /* background-color: rgb(102, 255, 0); */
+        width: 300px;
+         padding: 20px;
+        }
+.lastbox p{
+           padding-top:20px ;
+           line-height: 20px;
+           font-size: 20px;
+           color: rgb(197, 190, 190);
+           }                        
+.lastbox .i2{
+            font-size: 30px;
+            color: black;
+
+            } 
+            .lastbox a{
+              text-decoration: none;
+               }
+.p-company:hover {
+              color: rgb(255, 5, 5);
+              }           
+                 
+.icons button{
+       border-radius: 50%;
+       width: 50px;
+       height: 50px;
+       margin: 5px;
+       border: none;
+      }  
+.lastbox input{
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        border: 2px solid rgb(11, 243, 11);
+        margin-top: 10px;
+   
+       }                     
+ 
+.last-box4 .sub{
+           padding: 15px;
+           background-color: black;
+           color: white;
+           margin-top: 20px;
+           border-radius: 10px;
+           border: none;
+           width: 150px;
+           font-weight: bold;
+           cursor: pointer;
+        }  
+.sub:hover{
+     background-color: hotpink;
+     color: black;
+     font-weight: bold;
+     font-size: 15px;
+   }         
+          
+                                 /* ***response mobile */
+  @media screen and (max-width:500px) {
+    nav{
+      /* height: 60px; */
+      width: 100%;
+     }
+header{
+      height: 170vh;
+    }      
+  .head{
+        margin-top: 10px;
+  }    
+.submanu{
+      position: fixed;
+      
+      display: grid;
+      justify-content: center;
+      top: 120px;
+      left: 100%;
+      width: 100%;
+      padding: 20px;
+      
+}
+nav .i3{
+  display: inline;
+  font-size: 30px;
+  
+  } 
+.search{
+         left: 0px;
+       } 
+.inputbox{
+        width: 100%;
+       }  
+ .main{
+       height: 100vh;
+ }
+
+
+       .lastbox{
+        flex-wrap: wrap;
+        height: 200vh;
+        }                 
+}       
+
+@media screen and (min-width:500px) and (max-width:800px) {
+    nav{
+      /* height: 60px; */
+      width: 100%;
+     }
+header{
+      height: 170vh;
+    }      
+  .head{
+         margin-top: 10px; 
+  }    
+.submanu{
+      position: fixed;
+      
+      display: grid;
+      justify-content: center;
+      top: 120px;
+      left: 100%;
+      width: 100%;
+      padding: 20px;
+      
+}
+nav .i3{
+  display: inline;
+  font-size: 30px;
+  
+  } 
+.search{
+         left: 0px;
+       } 
+.inputbox{
+        width: 100%;
+       }  
+.main{
+     height: 100vh;
+}
+
+
+       .lastbox{
+        flex-wrap: wrap;
+        height: 110vh;
+        }                 
+}
